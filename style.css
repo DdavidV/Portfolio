@@ -128,6 +128,7 @@ svg{
   background-color: var(--nav-primary);
   transition: width 600ms ease;
   overflow: hidden;
+  z-index: 999;
 }
 
 .navbar-nav {
@@ -206,7 +207,7 @@ svg{
 }
 
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -228,10 +229,19 @@ svg{
   main {
     margin: 0;
   }
+
+  .text{
+    flex-direction: column;
+  }
+
+  #Contact{
+    padding-bottom: 6rem;
+  }
+
 }
 
 /* Large screens */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .navbar {
     top: 0;
     width: 5rem;
@@ -264,8 +274,11 @@ svg{
 
 .content{
   position: absolute;
+  display: flex;
+  flex-direction: column;
   top: 100vh;
-  height: 100vh;
+  height: auto;
+  width: 100%;
   background-color: var(--nav-header);
 }
 
@@ -304,4 +317,36 @@ p{
   top: 90px;
   font-size: 2rem;
   font-weight: bold;
+}
+
+/**/
+
+.tagcloud {
+  font-family: 'Poppins', sans-serif;  
+  font-size: 20px;
+  font-weight: 650;
+  color: var(--color-text);
+  margin-left: 30%;
+}
+.tagcloud--item:hover {
+  color: #36454F;
+}
+
+.title{
+  padding: 10px;
+}
+
+.text{
+  display: flex;
+  padding: 10px;
+}
+
+.text p{
+  text-align: justify;
+  font-size: larger;
+}
+
+.sphere{
+  position: relative;
+  padding-right: 16rem;
 }
