@@ -2,11 +2,11 @@ export default[
     {
         name: "room",
         type: "glbModel",
-        path: "/models/Room.glb"
+        path: "/Portfolio/models/Room.glb"
     },
     {
         name: "screen",
         type: "imageTexture",
-        path: "/textures/mountains.jpg"
+        path: "/Portfolio/textures/mountains.jpg"
     }
 ]
